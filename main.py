@@ -70,7 +70,6 @@ DATABASE_CONTENTS = {
 }
 
 def unpad(value, bs=BLOCKSIZE):
-    #pv = ord(value[-1])
     pv = value[-1]
     if pv > bs:
         raise Exception('Bad padding')
